@@ -19,6 +19,6 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "zahed-test-app-server"
+    Name = var.instance_name
   }
 }
